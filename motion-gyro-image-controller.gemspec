@@ -5,11 +5,11 @@ require 'motion/gyro/image/controller/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "motion-gyro-image-controller"
-  spec.version       = Motion::Gyro::Image::Controller::VERSION
-  spec.authors       = ["Jerry"]
-  spec.email         = ["jerry.j@multunus.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.version       = "1.0"
+  spec.authors       = ["Multunus"]
+  spec.email         = ["info@multunus.com"]
+  spec.summary       = %q{A controller that lets you control images using gyro}
+  spec.description   = %q{RubyMotion image view controller that can be scrolled by means of tilt}
   spec.homepage      = ""
   spec.license       = "MIT"
 
