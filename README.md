@@ -20,9 +20,14 @@ Or install it yourself as:
 gem install motion-gyro-image-controller
 ```
 
+## Sample App
+
+A sample app is included for reference. To get it up and running, simply clone the repository and run ```rake``` or ```rake device``` depending on whether you want to preview it in the simulator or device.
+
+
 ## Usage
 
-A sample app is included for reference. But here is how you can go about using this library:
+But here is how you can go about using this library:
 
 1.  Initialize the image controller as follows:
     ```ruby
