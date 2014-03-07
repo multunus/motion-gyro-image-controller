@@ -6,7 +6,7 @@ class PagedImageController < UIPageViewController
     set_page_controller_attributes
     set_up_sample_data
     self.index = 0
-    @image_controller = setup_image_controller
+    @image_controller = set_up_image_controller
     self.setViewControllers([@image_controller], direction: UIPageViewControllerNavigationDirectionForward, animated: true, completion: nil)
   end
 
@@ -29,7 +29,7 @@ class PagedImageController < UIPageViewController
       self.index = 0
       return nil
     end
-    @prev_image_controller = setup_image_controller
+    @prev_image_controller = set_up_image_controller
   end
   
   def pageViewController(page_view_controller, viewControllerAfterViewController: view_controller)
@@ -38,10 +38,10 @@ class PagedImageController < UIPageViewController
       self.index = self.items_list.count - 1
       return nil
     end
-    @next_image_controller = setup_image_controller
+    @next_image_controller = set_up_image_controller
   end
 
-  def setup_image_controller
+  def set_up_image_controller
     image_controller = GyroDrivenImageViewController.new
     screen_size = get_screen_size
     image_controller.set_up_view(screen_size.width, screen_size.height)
