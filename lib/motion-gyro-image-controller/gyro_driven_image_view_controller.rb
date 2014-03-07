@@ -92,6 +92,6 @@ class GyroDrivenImageViewController < ScrollingImageViewController
 
   def fit_image_to_height
     super
-    setup_gyro if gyro_available
+    set_up_gyro if gyro_available
   end
 end
