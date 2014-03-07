@@ -76,7 +76,7 @@ class GyroDrivenImageViewController < ScrollingImageViewController
 
   def get_scroll_offset_towards_right roll
     current_offset = @scroll_view.contentOffset.x
-    width = @scroll_view.contentSize.width - Device.screen.width
+    width = @scroll_view.contentSize.width - self.width
     new_offset = current_offset - ((width - current_offset) * roll)
     new_offset = width if new_offset > width
     new_offset
