@@ -8,12 +8,12 @@ class GyroDrivenImageViewController < ScrollingImageViewController
 
   def viewDidAppear animated
     super
-    setup_gyro if gyro_available
+    set_up_gyro if gyro_available
   end
   
   def viewWillDisappear(animated)
     super
-    teardown_gyro if gyro_available
+    tear_down_gyro if gyro_available
   end
   
   def gyro_available
@@ -28,7 +28,7 @@ class GyroDrivenImageViewController < ScrollingImageViewController
     @motion_manager.deviceMotion
   end
 
-  def setup_gyro
+  def set_up_gyro
     initialize_gyro_setup
     activate_timer_control
   end
@@ -39,7 +39,7 @@ class GyroDrivenImageViewController < ScrollingImageViewController
     @motion_manager.startDeviceMotionUpdates
   end
 
-  def teardown_gyro
+  def tear_down_gyro
     @timer.cancel!
     @motion_manager.stopDeviceMotionUpdates
   end
