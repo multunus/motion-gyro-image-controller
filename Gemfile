@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in motion-gyro-image-controller.gemspec
-gemspec
+gem 'rake'
+# Add your dependencies here:
+gem 'bubble-wrap'
+gem 'afmotion'
+gem 'alerter'
+gem 'motion-gyro-image-controller'
