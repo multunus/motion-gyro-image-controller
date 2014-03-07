@@ -58,13 +58,13 @@ class PagedImageController < UIPageViewController
   end
 
   def set_image_with_url controller, image_url, placeholder
-    @image_view = UIImageView.alloc.initWithFrame(CGRectZero)
+    image_view = UIImageView.alloc.initWithFrame(CGRectZero)
     completed_block = Proc.new do |request, response, image|
       controller.set_image image
     end
     placeholder = UIImage.imageNamed placeholder
     controller.set_image placeholder
-    @image_view.setImageWithURLRequest(NSURLRequest.requestWithURL(NSURL.URLWithString(image_url)), placeholderImage: placeholder, success: completed_block, failure: nil)
+    image_view.setImageWithURLRequest(NSURLRequest.requestWithURL(NSURL.URLWithString(image_url)), placeholderImage: placeholder, success: completed_block, failure: nil)
   end
 
   def get_screen_size
