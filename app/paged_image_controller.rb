@@ -44,7 +44,7 @@ class PagedImageController < UIPageViewController
   def set_up_image_controller
     image_controller = GyroDrivenImageViewController.new
     screen_size = get_screen_size
-    image_controller.set_up_view(screen_size.width, screen_size.height)
+    image_controller.set_up_view(20, 20, screen_size.width - 40, screen_size.height - 40)
     set_control_variables image_controller
     image_controller.index = self.index
     set_image_with_url image_controller, self.items_list[self.index], "placeholder.jpeg"
