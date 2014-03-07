@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "motion-gyro-image-controller"
-  spec.version       = "1.1"
+  spec.version       = "1.2"
   spec.authors       = ["Multunus"]
   spec.email         = ["info@multunus.com"]
   spec.summary       = %q{A controller that lets you control images using gyro}
