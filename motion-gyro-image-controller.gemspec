@@ -1,7 +1,6 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'motion/gyro/image/controller/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "motion-gyro-image-controller"
@@ -9,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Multunus"]
   spec.email         = ["info@multunus.com"]
   spec.summary       = %q{A controller that lets you control images using gyro}
-  spec.description   = %q{RubyMotion image view controller that can be scrolled by means of tilt}
+  spec.description   = %q{RubyMotion image view controller that lets you preview images by means of tilt}
   spec.homepage      = ""
   spec.license       = "MIT"
 
