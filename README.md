@@ -23,28 +23,33 @@ gem install motion-gyro-image-controller
 ## Usage
 
 A sample app is included for reference. But here is how you can go about using this library:
-1. Initialize the image controller as follows:
-```ruby
-image_controller = GyroDrivenImageViewController.new
-```
+
+1.  Initialize the image controller as follows:
+    ```ruby
+    image_controller = GyroDrivenImageViewController.new
+    ```
+
 2. Set up the origin and size of the view using the following method:
-```ruby
-image_controller.set_up_view(x_origin, y_origin, width, height)
-```
+    ```ruby
+    image_controller.set_up_view(x_origin, y_origin, width, height)
+    ```
+
 3. Set the control variables for sensitivity, update frequency and image motion rate:
-```ruby
-image_controller.update_interval = update_interval    # sample value: 1.0/120.0
-image_controller.motion_rate = image_motion_rate      # sample value: PI/180.0
-image_controller.shake_threshold = shake_sensitivity  # sample value: 0.1
-```
+    ```ruby
+    image_controller.update_interval = update_interval    # sample value: 1.0/120.0
+    image_controller.motion_rate = image_motion_rate      # sample value: PI/180.0
+    image_controller.shake_threshold = shake_sensitivity  # sample value: 0.1
+    ```
+
 4. In case you intend to use this in an image gallery, you may need to assign each image an index. We have provided an index value for each controller:
-```ruby
-image_controller.index = index
-```
-5. To set the actual image, there is a method (shown below) that accepts an instance of ```UIImage```. The sample app provides an example of how to use the ```setImageWithURL``` method to pull images from a server and use them.
-```ruby
-image_controller.set_image image
-```
+    ```ruby
+    image_controller.index = index
+    ```
+5. To set the actual image, there is a method that accepts an instance of ```UIImage```. The sample app provides an example of how to use the ```setImageWithURL``` method to pull images from a server and use them. The syntax for the method to set the image is:
+
+    ```ruby
+    image_controller.set_image image
+    ```
 
 ## Contributing
 
