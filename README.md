@@ -5,7 +5,7 @@ iOS (RubyMotion) Image Controller with Tilt Control
 
 This library facilitates the use of tilt to preview images. So for images that extend beyond the space allocated to them, a simple tilt of the device will let you preview the rest of the sections of the image. Special thanks to team [lorempixel](http://lorempixel.com/) for their super awesome service of providing great placeholder images.
 
-![Animated GIF of Sample Implementation](http://dl.dropboxusercontent.com/s/70po87u4jhzvept/gyro_controller_sample.gif)
+![Animated GIF of Sample Implementation](http://dl.dropboxusercontent.com/s/1a1vcisjmi81ctz/gyro-image-sample.gif)
 
 ## Installation
 
